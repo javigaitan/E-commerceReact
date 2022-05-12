@@ -1,0 +1,36 @@
+.Contador {
+
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+    
+}
+
+.BtnContador {
+
+    width: 30px;
+    height: 35px;
+    
+
+
+}
+
+.BtnAgregar {
+
+    width: 80px;
+    height: 35px;
+    color: white;
+    font-style: oblique;
+    background-color: red;
+    
+
+}
+
+.Contado {
+    font-size:x-large;
+    padding: 15px;
+    margin: 5px;
+    border: 5px;
+    
+   
+}

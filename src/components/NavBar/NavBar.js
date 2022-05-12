@@ -1,5 +1,6 @@
 import './NavBar.css'
 import NavBarImg from './NavBarImg/AikidoStoreLogo.png'
+import CartWindget from '../CartWindget/CartWindget'
 
 
 
@@ -14,6 +15,11 @@ const NavBar = () => {
                     <li class=""><a href="">Armas</a></li>
                     <li class=""><a href="">Sale!</a></li>
                 </ul>
+
+                <div className='CartWindget'>
+                <CartWindget carrito={'50'} />
+                </div>
+
             
             </nav>
 

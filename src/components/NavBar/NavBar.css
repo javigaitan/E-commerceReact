@@ -4,6 +4,13 @@
    
 }
 
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
 .Header nav ul li {
     display: inline-block;
     margin-right: 50px;
@@ -19,6 +26,7 @@
 .LogoAikido {
     display: flex;
     justify-content: center;
+    width: 300px;
 
 
 }
@@ -28,4 +36,18 @@
     justify-content:space-around;
     flex-flow: row wrap;
     justify-content:flex-end;
+}
+
+.carrito {
+    color: red;
+    background-color: red;
+}
+
+.CartWindget{
+    display:flex;
+    color: white;
+    font-size: larger;
+    
+
+    background-color: black;
 }

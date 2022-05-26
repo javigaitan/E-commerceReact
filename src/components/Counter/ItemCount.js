@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import './ItemCount.css'
 
 const Counter = ({initial, stock, onAdd}) => {
-    const [count, setCount] = useState(0)
+    const [count, setCount] = useState(initial ? initial : 1)
 
 
     useEffect(() => {
@@ -12,14 +12,16 @@ const Counter = ({initial, stock, onAdd}) => {
 
 
     const decrement = () => {
-
-        initial >= count ? setCount(count + 0) : setCount(count - 1)
+        if (count > initial) {
+            setCount(count - 1);
+        }
         
     }
 
     const increment = () => {
-
-        stock == count ? setCount(count + 0) : setCount(count + 1)
+        if (count < initial) {
+            setCount(count + 1);
+        }
         
     }
 

@@ -1,0 +1,12 @@
+.CardItem {
+    width: 150px;
+    padding: 30px;
+    margin: 30px;
+    font-size: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.CardContein{
+    display: inline-block;
+    }

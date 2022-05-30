@@ -1,14 +1,16 @@
-const CartWindget = (props) => {
-    console.log(props.carrito)
+import './CartWindget.css'
+
+const CartWindget = () => {
+    
     return(
         
-        <div>
-            <ion-icon name="cart-outline"></ion-icon>
-            <p>{props.carrito}</p>
-        </div>
+        <button to='/cart' className="CartWidget">
+            <img src="/images/carrito.svg" alt='cart-widget' className='CartImg'/>
+            0
+        </button>
         
 
-    )
+    );
 }
 
 export default CartWindget

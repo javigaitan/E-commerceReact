@@ -18,7 +18,7 @@ function App() {
       <NavBar />
       <ItemListContainer greeting={'Aquí estaran mis productos'} />
       <button onClick={() => setShow(!show)}>{show ? 'Desmontar contador' : 'Montar contador'}</button>
-        { show ? <Counter initial={0} stock={10} onAdd={handleOnAdd}/> : null }
+        { show ? <Counter initial={1} stock={10} onAdd={handleOnAdd}/> : null }
       
 
     </div>

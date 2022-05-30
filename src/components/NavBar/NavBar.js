@@ -17,7 +17,7 @@ const NavBar = () => {
                 </ul>
 
                 <div className='CartWindget'>
-                <CartWindget carrito={'50'} />
+                <CartWindget />
                 </div>
 
             

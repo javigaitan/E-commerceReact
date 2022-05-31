@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react"
 import './ItemDetail.css'
-import { getProducts } from '../../asyncmock'
+import { getItem } from '../../asyncmock'
 
 const ItemDetail = () => {
     const [products, setProducts] = useState([])
 
      useEffect(() => {
 
-        getProducts().then(response => {
+        getItem().then(response => {
             setProducts(response)
 
          fetch('https://api.mercadolibre.com/sites/MLA/search?q=aikidolibros')
@@ -32,7 +32,7 @@ const ItemDetail = () => {
                             <img src={p.thumbnail} alt={p.title}/>
                             <p>{p.title}</p>
                             <p>${p.price}</p>
-                            <p>{p.detail}</p>
+                            <p>{p.description}</p>
                         </li>
                     )
                 })}

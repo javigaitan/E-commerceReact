@@ -14,7 +14,7 @@ const ItemDetail = () => {
              .then(response => {
                  return response.json()
              }).then(json => {
-                 setProducts(json.results.slice(0,5))
+                 setProducts(json.results.slice(0,1))
             })
         })
      }, [])
@@ -32,7 +32,7 @@ const ItemDetail = () => {
                             <img src={p.thumbnail} alt={p.title}/>
                             <p>{p.title}</p>
                             <p>${p.price}</p>
-                            <p>{p.description}</p>
+                            <p>{p.itemdetail}</p>
                         </li>
                     )
                 })}

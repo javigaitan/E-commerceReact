@@ -1,16 +1,18 @@
 .CardItemDetail {
-    display: inline-block;
+    
     width: 150px;
     padding: 1%;
     margin: 30px;
     font-size: 25px;
     border: 1px solid black;
     border-radius: 10px;
+    text-decoration: none;
 
 }
 
 .CardConteinDetail{
-    display: inline-block;
+    display: flex;
+    text-decoration: none;
     }
 
 

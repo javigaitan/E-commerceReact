@@ -1,12 +1,78 @@
-.CardItem {
-    width: 150px;
-    padding: 30px;
-    margin: 30px;
-    font-size: 10px;
-    border: 1px solid black;
-    border-radius: 10px;
-}
+.conteinerCard{
+   display:inline-block;
+   height: 100%;
+   padding: 5px;
+   border: 10px;
+ 
 
-.CardContein{
-    display: inline-block;
+
+}
+.shop-card {
+        width: 350px;
+        background: #f5f5f5;
+        box-shadow: 0 10px 20px rgba(0,0,0,.3);
+        overflow: hidden;
+        border-radius: 5px;
+        padding: 25px;
+        text-align: center;
+        z-index: 2;
+}
+   
+      
+.title {
+          font-weight: 900;
+          text-transform: uppercase;
+          font-size: 25px;
+          color: #23211f;
+          margin-bottom: 5px;
+        }
+      
+        .desc {
+          font-size: 17px;
+          opacity: .8;
+          margin-bottom: 3px;
+        }
+      
+        .cta {
+          padding: 20px 20px 5px;
+      
+          
+          
     }
+      
+        .price {
+          float: left;
+          color: #FF3100;
+          font-size: 21px;
+          font-weight: 800;
+          padding-top: 2px;
+          transition: color .3s ease-in-out;
+          margin-top: 4px;
+        }
+      
+        .btn {
+          position: relative;
+          z-index: 1;
+          float: right;
+          display: inline-block;
+          font-size: 13px;
+          font-weight: 900;
+          text-transform: uppercase;
+          color: #FF3100;
+          padding: 12px 18px;
+          cursor: pointer;
+          transition: all .3s ease-in-out;
+          line-height: .95;
+          border: none;
+          background: none;
+          outline: none;
+          border: 1px solid #FF3100;
+          border-radius: 20px;
+          overflow: hidden;
+          
+}
+          
+        
+      
+      
+      

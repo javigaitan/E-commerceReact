@@ -9,6 +9,19 @@ nav{
     justify-content: space-between;
     align-content: center;
     align-items: center;
+    width: 100%;
+    border: 10px;
+    
+    margin-bottom: 50px;
+    
+    
+}
+
+.Header nav ul{
+    list-style-type: none;
+    text-decoration: none;
+    
+    
 }
 
 .Header nav ul li {
@@ -17,11 +30,13 @@ nav{
     font-weight: bold; 
     color: black;
     font-size: 20px;
-    
-
 
 }
 
+.Option{
+    text-decoration: none;
+    list-style-type: none;
+}
 
 .LogoAikido {
     display: flex;
@@ -36,12 +51,11 @@ nav{
     justify-content:space-around;
     flex-flow: row wrap;
     justify-content:flex-end;
+
+
 }
 
-.carrito {
-    color: red;
-    background-color: red;
-}
+
 
 .CartWindget{
     display:flex;

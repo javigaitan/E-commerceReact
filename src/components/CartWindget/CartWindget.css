@@ -1,0 +1,11 @@
+.CartWidget{
+    padding: 12px;
+    background-color: rgb(219, 197, 197);
+    font-size: medium;
+    border: 1px solid rgb(219, 197, 197);
+    border-radius: 10px;
+    cursor: pointer;
+    justify-content: center;
+    text-decoration: none;
+    border-style: none;
+}

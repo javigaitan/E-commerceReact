@@ -1,15 +1,25 @@
 import './Item.css'
 
-const Item = ({id, name, price, handlePage, img}) => {
+const Item = ({id, name, price, handlePage, img, description}) => {
     return (
-      <div className='CardContein'>
-        <div className="CardItem">
-            <img scr={img}/>
-            <h1>{name}</h1>
-            <h2>${price}</h2>
-            <button onClick={() => handlePage({ path: 'detail', param: id})}>Ver detalle</button>
+        <div class='conteinerCard'>
+        <div class="shop-card">
+        <div class="title">
+        <h1>{name}</h1>
         </div>
+        <div class="desc">
+          <p>{description}</p>
         </div>
+      
+        <div class="cta">
+          <div class="price">${price}</div>
+          <button class="btn">Comprar</button>
+          <button class="btn" onClick={() => handlePage({ path: 'detail', param: id})}>Ver detalle</button>
+        </div>
+      </div>
+      </div>
+      
+
     )
 }
 

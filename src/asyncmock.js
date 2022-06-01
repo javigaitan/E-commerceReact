@@ -6,7 +6,7 @@ const products = [
         category: 'Armas',
         img: 'https://www.budokanweb.com/wp-content/uploads/2020/01/hakama1-300x300.jpg',
         stock: 10,
-        description:''
+        description:'Bokken para realizar artes marciales de incienso'
     },
     {
         id: '2',
@@ -15,7 +15,7 @@ const products = [
         category: 'Armas',
         img: 'https://www.budokanweb.com/wp-content/uploads/2020/01/hakama1-300x300.jpg',
         stock: 10,
-        description:''
+        description:'Tanto, cuchillo de madera para practicas de aikido'
     },
 
     {
@@ -25,7 +25,7 @@ const products = [
         category: 'Armas',
         img: 'https://www.budokanweb.com/wp-content/uploads/2020/01/hakama1-300x300.jpg',
         stock: 10,
-        description:''
+        description:'hambo para realizar artes marciales'
     },
 
     {
@@ -35,7 +35,7 @@ const products = [
         category: 'Armas',
         img: '',
         stock: 10,
-        description:''
+        description:'Bokken de guatambu para practicas de aikido'
     },
 
     {
@@ -45,7 +45,7 @@ const products = [
         category: 'Indumentaria',
         img: '',
         stock: 10,
-        description:''
+        description:'Traje de aikido tramado grueso'
     },
 
     {
@@ -55,7 +55,7 @@ const products = [
         category: 'Indumentaria',
         img: '',
         stock: 10,
-        description:''
+        description:'Traje de aikido estandar '
     },
 
     {
@@ -65,7 +65,7 @@ const products = [
         category: 'Indumentaria',
         img: '',
         stock: 10,
-        description:''
+        description:'Hakama para Danes'
     },
 
     {
@@ -75,7 +75,7 @@ const products = [
         category: 'Sale!',
         img: '',
         stock: 10,
-        description:''
+        description:'Obis '
     },
 
 ]

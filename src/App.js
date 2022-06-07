@@ -3,7 +3,8 @@ import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import { useState } from 'react'
 import Counter from './components/Counter/ItemCount';
-import ItemDetail from './components/ItemDetailContainer/ItemDetail'
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function App() {
 
@@ -14,16 +15,19 @@ function App() {
   }
 
   return (
-    <div className="">
 
-      <NavBar />
-      <ItemDetail />
-      <ItemListContainer greeting={'Aquí estaran mis productos'} />
-      <button onClick={() => setShow(!show)}>{show ? 'Desmontar contador' : 'Montar contador'}</button>
-        { show ? <Counter initial={1} stock={10} onAdd={handleOnAdd}/> : null }
-        
+    <BrowserRouter>
+    <NavBar />
 
-    </div>
+    <Routes>
+      <Route path='/' element={<ItemListContainer greeting='Todo para Aikido'/>}/>
+      <Route path='/detail/:productId' element={<ItemDetailContainer />}/>
+      <Route path='/category/:categoryId' element={<ItemListContainer greeting="Productos filtrados por categoria"/>}/>
+      <Route/>
+
+    </Routes>
+    </BrowserRouter>
+
   );
 }
 

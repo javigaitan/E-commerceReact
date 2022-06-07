@@ -4,7 +4,7 @@
    
 }
 
-nav{
+.Nav{
     display: flex;
     justify-content: space-between;
     align-content: center;
@@ -13,29 +13,22 @@ nav{
     border: 10px;
     
     margin-bottom: 50px;
-    
-    
-}
-
-.Header nav ul{
-    list-style-type: none;
     text-decoration: none;
-    
+    list-style-type: none;
     
 }
 
-.Header nav ul li {
-    display: inline-block;
+
+.Category{
+    text-decoration: none;
+    list-style-type: none;
+    Display: inline-block;
     margin-right: 50px;
     font-weight: bold; 
     color: black;
     font-size: 20px;
 
-}
 
-.Option{
-    text-decoration: none;
-    list-style-type: none;
 }
 
 .LogoAikido {
@@ -51,6 +44,8 @@ nav{
     justify-content:space-around;
     flex-flow: row wrap;
     justify-content:flex-end;
+    text-decoration: none;
+    list-style-type: none;
 
 
 }

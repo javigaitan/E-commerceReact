@@ -1,8 +1,8 @@
-import './Item.css'
-import { Link } from 'react-router-dom'
+import './ItemDetail.css'
 
-const Item = ({id, name, price, img, description}) => {
-    return (
+
+const ItemDetail = ({  name, price, description }) => {
+    return(
         <div class='conteinerCard'>
         <div class="shop-card">
         <div class="title">
@@ -15,13 +15,12 @@ const Item = ({id, name, price, img, description}) => {
         <div class="cta">
           <div class="price">${price}</div>
           <button class="btn">Comprar</button>
-          <Link to={`/detail/${id}`}>Ver detalle</Link>
+          
         </div>
       </div>
       </div>
-      
-
+        
     )
 }
 
-export default Item
+export default ItemDetail

@@ -4,49 +4,49 @@ import { Link } from 'react-router-dom'
 import ItemCount from '../ClassItemCount/ItemCount'
 import CartContext from '../../context/CartContext'
 import { useNotification } from '../../notification/Notification'
-import Cart from '../Cart/Cart'
 
 
-const ItemDetail = ({  name, price, description, stock, id,  }) => {
+const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
+    const [count, setCount] = useState(0)
 
-  const [count, setCount] = useState(0)
+    const { setNotification } = useNotification()
 
-  const { setNotification } = useNotification()
-
-  const { addItem, getProduct } = useContext(CartContext)
-
-  const handleOnAdd = (count) => {
-    setCount(count)
-    setNotification('success', 'Se agrego correctamente al carrito')
-    addItem({ id, name, price, count: Number(count) })
-
-  }
-
-    return(
-        <div class='conteinerCard'>
-        <div class="shop-card">
-        <div class="title">
-        <h1>{name}</h1>
-        </div>
-        <div class="desc">
-          <p>{description}</p>
-        </div>
-      
-        <div class="cta">
-          <div class="price">${price}</div>
-          <div>
-            { count > 0  
-                    ? <Link to='/Cart' className='BtnContador'>Finalizar compra</Link> 
-                    : <ItemCount stock={stock} onAdd={handleOnAdd} initial={getProduct(id)?.count}/>
-                    
-          } 
-          </div>
+    const { addItem, getProduct } = useContext(CartContext)
 
 
-        </div>
-      </div>
-      </div>
-        
+    const handleOnAdd = (count) => {
+        setCount(count)
+        setNotification('success', 'Se agrego correctamente al carrito')
+        addItem({ id, name, price, count: Number(count) })
+    }
+
+    return (
+        <article className="">
+            <header className="">
+                <h2 className="">
+                    {name}
+                </h2>
+            </header>
+            <picture>
+                <img src={img} alt={name} className=""/>
+            </picture>
+            <section>
+                <p className="">
+                    Categoria: {category}
+                </p>
+                <p className="">
+                    Descripción: {description}
+                </p>
+                <p className="">
+                    Precio: {price}
+                </p>
+            </section>           
+            <footer className=''>
+                { count > 0  
+                    ? <Link to='/Cart' className=''>Finalizar compra</Link> 
+                    : <ItemCount stock={stock} onAdd={handleOnAdd} initial={getProduct(id)?.count}/>}               
+            </footer>
+        </article>
     )
 }
 

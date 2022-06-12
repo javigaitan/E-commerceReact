@@ -1,32 +1,43 @@
-import { Component } from "react";
+import { useState, useEffect } from 'react'
 
-class ClassCounter extends Component {
-    constructor(props) {
-        super(props)
-        this.state = { count: 0, otherState: 'hola' }
+
+const Counter = ({initial = 1, stock = 0, onAdd}) => {
+    const [count, setCount] = useState(initial)
+
+
+    useEffect(() => {
+
+        stock == count ? console.log('Se llego al limite de STOCK') : console.log('Segui comprando')
+    })
+
+
+    const decrement = () => {
+        if (count > 1) {
+            setCount(count - 1);
+        }
+        
     }
 
-    decrement = () => {
-        this.setState({
-            count: this.state.count - 1
-        })
+    const increment = () => {
+        if (count < stock) {
+            setCount(count + 1);
+        }
+        
     }
 
-    increment = () => {
-        this.setState({
-            count: this.state.count + 1
-        })
-    }
 
-    render() {
-        return (
+    return(
+        <div className ='Contador' >
+
+            <button className='BtnContador' onClick={decrement}>-</button> 
+            <p className='Contado'>{count}</p>
+            <button  className='BtnContador'onClick={increment}>+</button>
+            
             <div>
-                <button onClick={this.decrement}>-</button>
-                <p>{this.state.count}</p>
-                <button onClick={this.increment}>+</button>
+            <button className='BtnAgregar' onClick={() => onAdd(count)}>Agregar al carrito</button>
             </div>
-        )
-    }
-}
+        </div>
+    )
+} 
 
-export default ClassCounter
+export default Counter

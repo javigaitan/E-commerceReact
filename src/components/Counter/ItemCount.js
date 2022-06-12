@@ -32,7 +32,10 @@ const Counter = ({initial = 1, stock = 0, onAdd}) => {
             <button className='BtnContador' onClick={decrement}>-</button> 
             <p className='Contado'>{count}</p>
             <button  className='BtnContador'onClick={increment}>+</button>
+            
+            <div>
             <button className='BtnAgregar' onClick={() => onAdd(count)}>Agregar al carrito</button>
+            </div>
         </div>
     )
 } 

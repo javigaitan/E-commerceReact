@@ -4,7 +4,7 @@ const products = [
         name: 'Bokken Incienso',
         price: 1000 ,
         category: 'Armas',
-        img: 'https://www.budokanweb.com/wp-content/uploads/2020/01/hakama1-300x300.jpg',
+        img: 'https://www.budokanweb.com/wp-content/uploads/2020/05/bokken-incienso.jpg',
         stock: 10,
         description:'Bokken para realizar artes marciales de incienso'
     },
@@ -13,7 +13,7 @@ const products = [
         name: 'Tanto',
         price: 500 ,
         category: 'Armas',
-        img: 'https://www.budokanweb.com/wp-content/uploads/2020/01/hakama1-300x300.jpg',
+        img: 'https://www.budokanweb.com/wp-content/uploads/2014/03/Tanto-Guatambu-300x300.jpg',
         stock: 10,
         description:'Tanto, cuchillo de madera para practicas de aikido'
     },
@@ -23,7 +23,7 @@ const products = [
         name: 'Hambo',
         price: 400 ,
         category: 'Armas',
-        img: 'https://www.budokanweb.com/wp-content/uploads/2020/01/hakama1-300x300.jpg',
+        img: 'https://www.budokanweb.com/wp-content/uploads/2014/03/Hanbo-guatambu-300x300.jpg',
         stock: 10,
         description:'hambo para realizar artes marciales'
     },
@@ -33,7 +33,7 @@ const products = [
         name: 'Bokken Guatambu',
         price: 1000 ,
         category: 'Armas',
-        img: '',
+        img: 'https://www.budokanweb.com/wp-content/uploads/2020/05/bokken-guatambu-300x300.jpg',
         stock: 10,
         description:'Bokken de guatambu para practicas de aikido'
     },
@@ -43,7 +43,7 @@ const products = [
         name: 'Aikidogi Premium',
         price: 5000 ,
         category: 'Indumentaria',
-        img: '',
+        img: 'https://www.budokanweb.com/wp-content/uploads/2020/06/Karategi-Budokan-mediano-1-300x300.jpg',
         stock: 10,
         description:'Traje de aikido tramado grueso'
     },
@@ -53,7 +53,7 @@ const products = [
         name: 'Aikidogi ',
         price: 3000 ,
         category: 'Indumentaria',
-        img: '',
+        img: 'https://www.budokanweb.com/wp-content/uploads/2020/01/aikido-300x300.jpg',
         stock: 10,
         description:'Traje de aikido estandar '
     },
@@ -63,7 +63,7 @@ const products = [
         name: 'Hakama',
         price: 2500 ,
         category: 'Indumentaria',
-        img: '',
+        img: 'https://www.budokanweb.com/wp-content/uploads/2020/01/hakama1-300x300.jpg',
         stock: 10,
         description:'Hakama para Danes'
     },

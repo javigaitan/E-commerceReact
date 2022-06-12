@@ -28,7 +28,7 @@ function App() {
       <Route path='/' element={<ItemListContainer greeting='Todo para Aikido'/>}/>
       <Route path='/detail/:productId' element={<ItemDetailContainer />}/>
       <Route path='/category/:categoryId' element={<ItemListContainer greeting="Productos filtrados por categoria"/>}/>
-      <Route path='/cart' element={<Cart />}/>
+      <Route path='/Cart' element={<Cart />}/>
 
     </Routes>
     </BrowserRouter>

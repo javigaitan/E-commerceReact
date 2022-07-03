@@ -21,33 +21,32 @@ const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
     }
 
     return (
-        <article className="">
-            <header className="">
-                <h2 className="">
+        <article className="CardItem">
+            <header className="Header">
+                <h2 className="ItemHeader">
                     {name}
                 </h2>
             </header>
             <picture>
-                <img src={img} alt={name} className=""/>
+                <img src={img} alt={name} className="ItemImg"/>
             </picture>
             <section>
-                <p className="">
+                <p className="Info">
                     Categoria: {category}
                 </p>
-                <p className="">
+                <p className="Info">
                     Descripción: {description}
                 </p>
-                <p className="">
+                <p className="Info">
                     Precio: {price}
                 </p>
             </section>           
-            <footer className=''>
+            <footer className='ItemFooter'>
                 { count > 0  
-                    ? <Link to='/Cart' className=''>Finalizar compra</Link> 
+                    ? <Link to='/cart' className='Option'>Finalizar compra</Link> 
                     : <ItemCount stock={stock} onAdd={handleOnAdd} initial={getProduct(id)?.count}/>}               
             </footer>
         </article>
     )
 }
-
 export default ItemDetail

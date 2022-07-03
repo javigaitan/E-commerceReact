@@ -13,8 +13,8 @@ function App() {
 
   const [show, setShow] = useState(true)
 
-  const handleOnAdd = (quantity) => {
-    console.log(`se agregaron ${quantity} productos`)
+  const handleOnAdd = (count) => {
+    console.log(`se agregaron ${count} productos`)
   }
 
   return (

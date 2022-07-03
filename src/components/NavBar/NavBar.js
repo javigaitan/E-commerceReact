@@ -1,9 +1,16 @@
 import './NavBar.css'
+import { useContext } from 'react'
 import NavBarImg from './NavBarImg/AikidoStoreLogo.png'
 import CartWindget from '../CartWindget/CartWindget'
 import { Link, NavLink } from 'react-router-dom'
+import CartContext from '../../context/CartContext'
 
 const NavBar = () => {
+
+    const { setCount } = useContext(CartContext)
+
+    const count = setCount()
+
     return (
         <header className='Header'>
             <nav className='Nav'>
@@ -16,9 +23,7 @@ const NavBar = () => {
                     <NavLink to='/category/Sale' className={({isActive}) => isActive ? 'ActiveOption' : 'Category'}>Sale</NavLink>
                 </div>
 
-                <div className='CartWindget'>
-                <CartWindget />
-                </div>
+                {count > 0 && <CartWindget />}
 
             
             </nav>

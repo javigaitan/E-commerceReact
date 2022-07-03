@@ -1,18 +1,23 @@
-.CardItemDetail {
-    
-    width: 150px;
-    padding: 1%;
-    margin: 30px;
-    font-size: 25px;
-    border: 1px solid black;
-    border-radius: 10px;
-    text-decoration: none;
-
+.shop-card {
+        width: 350px;
+        background: #f5f5f5;
+        box-shadow: 0 10px 20px rgba(0,0,0,.3);
+        overflow: hidden;
+        border-radius: 5px;
+        padding: 25px;
+        text-align: center;
+        z-index: 2;
 }
 
-.CardConteinDetail{
+
+.ItemDetailBody{
+
     display: flex;
-    text-decoration: none;
-    }
+    justify-content: center;
+    justify-items: center;
+    
 
+}
+   
 
+    

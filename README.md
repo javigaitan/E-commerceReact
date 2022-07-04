@@ -6,17 +6,22 @@ Demo
 
 Clone repository
 git clone https://github.com/javigaitan/E-commerceReact.git
+
+
 languages ​​used
+
 HTML
 CSS
 JavaScript
-Libraries
+
+
 
 
 Library	Version
 React	17.0.2
 React-router-dom	6.1.1
 Firebase	9.6.1
+
 Instalación de React JS
 This project initialise with Create React App.
 

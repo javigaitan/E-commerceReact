@@ -10,12 +10,13 @@ git clone https://github.com/javigaitan/E-commerceReact.git
 Ver ['.env.example']
 
 En Firebase se deberia generar una coleccion con el nombre products que posea el siguiente formato:
-name: nameProduc - Tipo de Dato: String
-price: priceProduc - Tipo de Dato: number
-category: categoryProduc - Tipo de Dato: String
-stock: stockProduc - Tipo de Dato: Number
-img: imgProduc - Tipo de Dato: String
-description: descriptionProduc - Tipo de Dato: String
+
+- name: nameProduc - Tipo de Dato: String
+- price: priceProduc - Tipo de Dato: number
+- category: categoryProduc - Tipo de Dato: String
+- stock: stockProduc - Tipo de Dato: Number
+- img: imgProduc - Tipo de Dato: String
+- description: descriptionProduc - Tipo de Dato: String
 
 Esto les data los datos necesario para completar en el archivo ['.env.example'] como lo indica.
 

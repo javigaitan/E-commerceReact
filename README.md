@@ -69,4 +69,3 @@ npm start
 ```sh
 https://e-commerce-react-topaz.vercel.app/
 ```
-

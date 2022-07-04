@@ -6,6 +6,10 @@ E-commerce project for practice of course of React js in CoderHouse
 git clone https://github.com/javigaitan/E-commerceReact.git
 ```
 
+## _Deploy_
+```sh
+https://e-commerce-react-topaz.vercel.app/
+```
 
 
 ## _languages ​​used_

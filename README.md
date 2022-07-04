@@ -1,6 +1,11 @@
 # E-comerce Aikido Store
 E-commerce project for practice of course of React js in CoderHouse
 
+## _Clone repository_
+```sh
+git clone https://github.com/lucasspino/Practica-ReactJs.git
+```
+
 
 
 ## _languages ​​used_

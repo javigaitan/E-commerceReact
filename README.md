@@ -4,6 +4,9 @@ E-commerce project for practice of course of React js in CoderHouse
 ## _Clone repository_
 ```sh
 git clone https://github.com/javigaitan/E-commerceReact.git
+cd aikidostore
+npm install
+npm start
 ```
 ## _Environment Variables_
 
@@ -53,16 +56,6 @@ Esto les permitira navegar por la lista de producto, ver su valor y descripcion,
 
 This project initialise with [Create React App](https://github.com/facebook/create-react-app).
 
-```sh
-npx create-react-app app_name
-cd app_name
-npm install
-```
-
-Start the project
-```sh
-npm start
-```
 
 
 ## _Deploy_

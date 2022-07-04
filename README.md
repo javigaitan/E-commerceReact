@@ -20,6 +20,15 @@ En Firebase se deberia generar una coleccion con el nombre products que posea el
 
 Esto les data los datos necesario para completar en el archivo ['.env.example'] como lo indica.
 
+//FirebaseConfig:
+
+- REACT_APP_apiKey=
+- REACT_APP_authDomain=
+- REACT_APP_projectId=
+- REACT_APP_storageBucket=
+- REACT_APP_messagingSenderId=
+- REACT_APP_appId=
+
 
 Esto les permitira navegar por la lista de producto, ver su valor y descripcion, y al ingresar en ella podran ver mas informacion del producto con la posibilidad de sumarlo a su carrito de compras, pueden volver clikeando la imagen del Navbar o finalizar compra en ese momento. Completar el formulario de datos y este generar uan Orden de Compra. 
 

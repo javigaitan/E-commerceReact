@@ -1,43 +1,41 @@
 import { useState, useEffect } from 'react'
+import './ItemCount.css'
 
 
-const Counter = ({initial = 1, stock = 0, onAdd}) => {
-    const [count, setCount] = useState(initial)
+const ItemCount = ({ stock, onAdd }) => {
 
+    const [count, setCount] = useState(1);
 
     useEffect(() => {
 
-        stock == count ? console.log('Se llego al limite de STOCK') : console.log('Segui comprando')
+        stock === count ? console.log('Se llego al limite de STOCK') : console.log('Segui comprando')
     })
 
+    const add = () => {
+        count !== stock && setCount(count + 1);
+    }
+    const substract = () => {
+        count !== 0 && setCount(count - 1)
 
-    const decrement = () => {
-        if (count > 1) {
-            setCount(count - 1);
-        }
         
     }
 
-    const increment = () => {
-        if (count < stock) {
-            setCount(count + 1);
-        }
-        
-    }
+    useEffect(() => {
 
+        count === 0 ? console.log('No podes comprar 0 productos') : console.log('Podes sumas mas productos')
+    })
 
-    return(
-        <div className ='Contador' >
-
-            <button className='BtnContador' onClick={decrement}>-</button> 
-            <p className='Contado'>{count}</p>
-            <button  className='BtnContador'onClick={increment}>+</button>
-            
+    return (
+        <div className='containerCount'>
+            <h3>{count}</h3>
             <div>
-            <button className='BtnAgregar' onClick={() => onAdd(count)}>Agregar al carrito</button>
+                <button  className='btn' onClick={add}>+</button>
+                <button className='btn' onClick={substract}>-</button>
+                <button className='btn' disabled={count === 0} onClick={() => onAdd(count)}>Agregar al Carrito</button>
             </div>
         </div>
     )
-} 
+};
 
-export default Counter
+
+export default ItemCount

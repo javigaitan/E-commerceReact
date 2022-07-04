@@ -1,10 +1,9 @@
 import './Cart.css'
-import { Link } from 'react-router-dom'
 import { useState, useContext } from "react"
 import CartContext from '../../context/CartContext'
 import CartItem from '../CartItem/CartItem'
-import { addDoc, collection, updateDoc, doc, getDocs, query, where, documentId, writeBatch } from 'firebase/firestore'
-import { db, collectionsName } from '../../service/firebase'
+import { addDoc, collection, getDocs, query, where, documentId, writeBatch } from 'firebase/firestore'
+import { db } from '../../service/firebase'
 import { useNotification } from '../../notification/Notification'
 
 const Cart = () => {
@@ -87,7 +86,9 @@ const Cart = () => {
     return (   
           
         <div>
-            <h1>Carrito de Compras</h1>
+            <h1 className='titleCart'>Carrito de Compras</h1>
+
+            <p className='bodyCart'> A continuacion completa los datos del formulario para generar la orden de compra de manera correcta</p>
 
             <div className='containerCard'>
 

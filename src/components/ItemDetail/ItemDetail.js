@@ -1,4 +1,4 @@
-import './ItemDetail.css'
+
 import { useState, useContext } from 'react'
 import { Link } from 'react-router-dom'
 import ItemCount from '../ClassItemCount/ItemCount'
@@ -28,22 +28,22 @@ const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
                 </h2>
             </header>
             <picture>
-                <img src={img} alt={name} className="ItemImg"/>
+                <img src={img} alt={name} />
             </picture>
             <section>
-                <p className="Info">
+                <p>
                     Categoria: {category}
                 </p>
-                <p className="Info">
+                <p>
                     Descripción: {description}
                 </p>
-                <p className="Info">
+                <p>
                     Precio: {price}
                 </p>
             </section>           
-            <footer className='ItemFooter'>
+            <footer>
                 { count > 0  
-                    ? <Link to='/cart' className='Option'>Finalizar compra</Link> 
+                    ? <Link to='/cart' className='btn'>Finalizar compra</Link> 
                     : <ItemCount stock={stock} onAdd={handleOnAdd} initial={getProduct(id)?.count}/>}               
             </footer>
         </article>

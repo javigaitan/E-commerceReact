@@ -3,7 +3,7 @@ E-commerce project for practice of course of React js in CoderHouse
 
 ## _Clone repository_
 ```sh
-git clone https://github.com/lucasspino/Practica-ReactJs.git
+git clone https://github.com/javigaitan/E-commerceReact.git
 ```
 
 

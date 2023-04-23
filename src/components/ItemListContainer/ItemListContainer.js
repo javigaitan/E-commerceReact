@@ -1,6 +1,8 @@
 import './ItemListContainer.css'
 import { useState, useEffect } from 'react'
 import ItemList from '../ItemList/ItemList'
+import Carousel from '../Carousel/Carousel'
+
 import { useParams } from 'react-router-dom'
 
 import { getDocs, collection, query, where} from 'firebase/firestore'
@@ -41,6 +43,10 @@ const ItemListContainer = ({ greeting }) => {
     return(
         <div className='ItemListContainer'>
             <h1>{ greeting }</h1>
+
+            <div> <Carousel/></div>
+
+
             { 
                 products.length > 0 
                     ? <ItemList products={products} />

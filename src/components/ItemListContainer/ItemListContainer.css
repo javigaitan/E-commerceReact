@@ -1,6 +1,19 @@
 .ItemListContainer{
 }
 
+.carousel-box{
+  justify-content: center;
+  display: flex;
+}
+.boxproducts{
+  display: flex;
+  justify-content: center;
+}
+.boxtitle{
+  display: flex;
+  justify-content: center;
+}
+
 .conteinerCard{
     display:inline-block;
     height: 100%;

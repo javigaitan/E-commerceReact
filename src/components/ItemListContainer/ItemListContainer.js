@@ -2,6 +2,7 @@ import './ItemListContainer.css'
 import { useState, useEffect } from 'react'
 import ItemList from '../ItemList/ItemList'
 import Carousel from '../Carousel/Carousel'
+import Footer from '../Footer/Footer'
 
 import { useParams } from 'react-router-dom'
 
@@ -57,7 +58,11 @@ const ItemListContainer = ({ greeting }) => {
                    products.length > 0 ? <ItemList products={products} /> : <h2>No hay productos</h2>
                 }
               </div>
+
+              <Footer/>
         </div>
+
+        
     )
 }
 

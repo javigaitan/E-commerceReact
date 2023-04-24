@@ -6,7 +6,7 @@ const Item = ({id, name, price, description}) => {
         <div class='conteinerCard'>
         <div class="shop-card">
         <div class="title">
-        <h1>{name}</h1>
+        <h3>{name}</h3>
         </div>
         <div class="desc">
           <p>{description}</p>

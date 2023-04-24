@@ -20,7 +20,7 @@ function App() {
     <NavBar />
 
     <Routes>
-      <Route path='/' element={<ItemListContainer greeting='Navega en nustro catalogo completo'/>}/>
+      <Route path='/' element={<ItemListContainer greeting='Navega en nuestro catalogo completo'/>}/>
       <Route path='/detail/:productId' element={<ItemDetailContainer />}/>
       <Route path='/category/:categoryId' element={<ItemListContainer greeting="Productos filtrados por categoria"/>}/>
       <Route path='/Cart' element={<Cart />}/>

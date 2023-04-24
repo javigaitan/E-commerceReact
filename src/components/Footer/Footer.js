@@ -19,8 +19,10 @@ function Footer() {
         <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faGithub} />
         </a>
+      </div >
+      <div className='copy'>
+      <p >© 2023 Gaitan Javier. Todos los derechos reservados.</p>
       </div>
-      <p>© 2023 Tu Nombre. Todos los derechos reservados.</p>
     </footer>
   );
 }

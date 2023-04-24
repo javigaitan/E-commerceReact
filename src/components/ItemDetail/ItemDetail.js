@@ -6,6 +6,8 @@ import CartContext from '../../context/CartContext'
 import { useNotification } from '../../notification/Notification'
 
 
+
+
 const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
     const [count, setCount] = useState(0)
 
@@ -46,6 +48,8 @@ const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
                     ? <Link to='/cart' className='btn'>Finalizar compra</Link> 
                     : <ItemCount stock={stock} onAdd={handleOnAdd} initial={getProduct(id)?.count}/>}               
             </footer>
+
+            
         </article>
     )
 }

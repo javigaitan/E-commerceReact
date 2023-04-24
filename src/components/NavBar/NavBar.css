@@ -4,6 +4,8 @@
    
 }
 
+
+
 .Nav{
     display: flex;
     justify-content: space-between;
@@ -17,6 +19,16 @@
     list-style-type: none;
     
 }
+.Nav a.ActiveOption {
+    text-decoration: none;
+    list-style-type: none;
+    Display: inline-block;
+    margin-right: 50px;
+    font-weight: bold; 
+    color: black;
+    font-size: 20px;
+  }
+  
 
 
 .Category{

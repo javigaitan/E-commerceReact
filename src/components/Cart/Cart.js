@@ -5,6 +5,8 @@ import CartItem from '../CartItem/CartItem'
 import { addDoc, collection, getDocs, query, where, documentId, writeBatch } from 'firebase/firestore'
 import { db } from '../../service/firebase'
 import { useNotification } from '../../notification/Notification'
+import Footer from '../Footer/Footer'
+import { Link } from 'react-router-dom'
 
 const Cart = () => {
     const [loading, setLoading] = useState(false)
@@ -79,7 +81,20 @@ const Cart = () => {
 
     if(setCount() === 0) {
         return (
-            <h1>No hay items en el carrito</h1>
+
+            <div>
+                <div className='noitems'>
+                  <h1>No hay items en el carrito, podes volver y selecciona lo que necesitas!</h1>
+                  
+                 </div>
+
+                 
+
+                 <button className="btn-back"><Link to={'/'}> volver </Link></button>
+            <Footer/>
+
+            </div>
+            
         )
     }
 
@@ -104,6 +119,12 @@ const Cart = () => {
             </form>
 
             </div>
+
+
+            <Footer/>
+
+
+
 
         
         </div>

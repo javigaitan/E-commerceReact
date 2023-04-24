@@ -14,3 +14,8 @@
     color: white;
     font-size: 1.5em;
   }
+
+  .copy{
+    display: flex;
+    justify-content: center;
+  }

@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import ItemList from '../ItemList/ItemList'
 import Carousel from '../Carousel/Carousel'
 import Footer from '../Footer/Footer'
+import Loading from '../Loading/Loading'
 
 import { useParams } from 'react-router-dom'
 
@@ -38,7 +39,7 @@ const ItemListContainer = ({ greeting }) => {
 
 
     if(loading) {
-        return <h1>Loading...</h1>
+        return <Loading/>
     }
 
     return(

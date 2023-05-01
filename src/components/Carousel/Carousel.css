@@ -1,7 +1,19 @@
 .carousel {
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
+  width: 100%;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel {
+    grid-template-columns: repeat(2, 1fr);
   }
+}
+
+@media screen and (max-width: 480px) {
+  .carousel {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
